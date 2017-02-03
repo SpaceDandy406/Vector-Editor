@@ -1,0 +1,87 @@
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe.config
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\MainWindow.baml
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\MainWindow.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\App.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF_MarkupCompile.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.g.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.Properties.Resources.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csproj.GenerateResource.Cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe.config
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\MainWindow.baml
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\MainWindow.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\App.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF_MarkupCompile.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.g.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.Properties.Resources.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csproj.GenerateResource.Cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe.config
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\ColorPicker.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorController.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\bin\Debug\ColorPicker.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\MainWindow.baml
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\MainWindow.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\App.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF_MarkupCompile.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.g.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.Properties.Resources.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csproj.GenerateResource.Cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe.config
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\ColorPicker.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorController.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\bin\Debug\ColorPicker.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\App.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF_MarkupCompile.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.g.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.Properties.Resources.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csproj.GenerateResource.Cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\MainWindow.baml
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(finaly version)\VectorsEditorWPF\obj\Debug\MainWindow.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe.config
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.exe
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorWPF.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\ColorPicker.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorController.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\bin\Debug\ColorPicker.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\MainWindow.baml
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\MainWindow.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\App.g.cs
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF_MarkupCompile.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.g.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.Properties.Resources.resources
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorWPF\obj\Debug\VectorsEditorWPF.csproj.GenerateResource.Cache

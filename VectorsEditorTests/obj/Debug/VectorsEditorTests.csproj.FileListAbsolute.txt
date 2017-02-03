@@ -1,0 +1,35 @@
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\obj\Debug\VectorsEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\VectorsEditor\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 2 (Переработаны стримы и формат файла))\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\obj\Debug\VectorsEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 3, отрисовка)\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Debug\VectorsEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb

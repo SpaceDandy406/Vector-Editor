@@ -1,0 +1,7 @@
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\bin\Debug\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\bin\Debug\VectorsEditorController.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\obj\Debug\VectorEditorController.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\obj\Debug\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorController\obj\Debug\VectorsEditorController.pdb

@@ -1,0 +1,4 @@
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorCore\bin\Release\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorCore\bin\Release\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorCore\obj\Release\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorCore\obj\Release\VectorsEditorCore.pdb

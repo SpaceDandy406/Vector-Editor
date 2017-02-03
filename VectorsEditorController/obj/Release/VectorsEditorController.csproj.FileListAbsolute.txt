@@ -1,0 +1,7 @@
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\bin\Release\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\bin\Release\VectorsEditorController.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\bin\Release\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\bin\Release\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\obj\Release\VectorsEditorController.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\obj\Release\VectorsEditorController.dll
+D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorController\obj\Release\VectorsEditorController.pdb

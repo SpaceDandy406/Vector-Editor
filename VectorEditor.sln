@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorEditorCore", "VectorsEditorCore\VectorEditorCore.csproj", "{5B1E5290-6789-47B8-971C-18B94FA5FC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorEditorTests", "VectorsEditorTests\VectorEditorTests.csproj", "{9D3ACFA1-FEAB-4299-BCF1-C63E6742CE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorEditorWPF", "VectorsEditorWPF\VectorEditorWPF.csproj", "{CFBBB91E-90C1-4F5A-87FC-C3E2A17A3D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorEditorController", "VectorsEditorController\VectorEditorController.csproj", "{5A28854C-8186-4864-AAAC-CD059F9192B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B1E5290-6789-47B8-971C-18B94FA5FC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1E5290-6789-47B8-971C-18B94FA5FC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1E5290-6789-47B8-971C-18B94FA5FC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1E5290-6789-47B8-971C-18B94FA5FC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3ACFA1-FEAB-4299-BCF1-C63E6742CE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3ACFA1-FEAB-4299-BCF1-C63E6742CE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3ACFA1-FEAB-4299-BCF1-C63E6742CE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3ACFA1-FEAB-4299-BCF1-C63E6742CE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFBBB91E-90C1-4F5A-87FC-C3E2A17A3D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBBB91E-90C1-4F5A-87FC-C3E2A17A3D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBBB91E-90C1-4F5A-87FC-C3E2A17A3D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBBB91E-90C1-4F5A-87FC-C3E2A17A3D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A28854C-8186-4864-AAAC-CD059F9192B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A28854C-8186-4864-AAAC-CD059F9192B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A28854C-8186-4864-AAAC-CD059F9192B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A28854C-8186-4864-AAAC-CD059F9192B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
