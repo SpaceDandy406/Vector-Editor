@@ -1,0 +1,10 @@
+VectorEditorWPF\obj
+VectorEditorController\obj
+
+VectorEditorCore\obj
+
+VectorEditorCore\bin
+VectorEditorController\bin
+VectorEditorWPF\bin
+
+.vs
