@@ -5,3 +5,15 @@ D:\CODE\CodeDevelop\Study\Информационная Технология\Ре
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorTests\obj\Debug\VectorEditorTests.csprojResolveAssemblyReference.cache
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\VectorsEditorTests.pdb
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\nunit.framework.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\nunit.framework.xml
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\obj\Debug\VectorEditorTests.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\obj\Debug\VectorEditorTests.csproj.CoreCompileInputs.cache
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\obj\Debug\VectorsEditorTests.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorTests\obj\Debug\VectorsEditorTests.pdb

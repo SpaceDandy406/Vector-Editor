@@ -3,3 +3,9 @@ D:\CODE\CodeDevelop\Study\Информационная Технология\Ре
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorCore\obj\Debug\VectorEditorCore.csprojResolveAssemblyReference.cache
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorCore\obj\Debug\VectorsEditorCore.dll
 D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor\VectorsEditorCore\obj\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\bin\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\bin\Debug\VectorsEditorCore.pdb
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\obj\Debug\VectorEditorCore.csprojResolveAssemblyReference.cache
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\obj\Debug\VectorEditorCore.csproj.CoreCompileInputs.cache
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\obj\Debug\VectorsEditorCore.dll
+D:\CODE\CodeDevelop\Си шарпный\VecThor\Vector-Editor\VectorsEditorCore\obj\Debug\VectorsEditorCore.pdb
