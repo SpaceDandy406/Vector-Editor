@@ -1,7 +1,0 @@
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Release\VectorsEditorTests.dll
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Release\VectorsEditorTests.pdb
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Release\VectorsEditorCore.dll
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\bin\Release\VectorsEditorCore.pdb
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Release\VectorsEditorTests.csprojResolveAssemblyReference.cache
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Release\VectorsEditorTests.dll
-D:\CODE\CodeDevelop\Study\Информационная Технология\Резерв\VectorsEditor(версия 4)\VectorsEditorTests\obj\Release\VectorsEditorTests.pdb
