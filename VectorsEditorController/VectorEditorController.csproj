@@ -50,13 +50,12 @@
     <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="Interfaces\IEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateContainer.cs" />
     <Compile Include="States\CreateFigure.cs" />
     <Compile Include="States\InitialState.cs" />
     <Compile Include="States\MovingFigure.cs" />
     <Compile Include="States\SelectFigure.cs" />
     <Compile Include="States\State.cs" />
-    <Compile Include="States\StateList.cs" />
+    <Compile Include="States\StateMachine.cs" />
     <Compile Include="States\StateType.cs" />
     <Compile Include="States\StretchFigure.cs" />
   </ItemGroup>

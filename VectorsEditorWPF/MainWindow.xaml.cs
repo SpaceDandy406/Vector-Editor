@@ -17,10 +17,9 @@ namespace VectorEditorWPF
         private Store _store;
         private ISavable _saver;
         private ILoadable _loader;
-        private StateList _stateList;
-        private StateContainer _stateContainer;
         private ICommand1 _command;
         private IFigureManager _figureManager;
+        private StateMachine _stateMachine;
 
         public bool FillColor { get; set; }
         public bool LineColor { get; set; }
@@ -35,9 +34,8 @@ namespace VectorEditorWPF
             _saver = new Saver(_store);
             _loader = new Loader(_store);
             _figureManager = new FigureManager(form, image);
-            _stateContainer = new StateContainer();
-            _stateList = new StateList(_stateContainer, _figureManager);
-            _command = new Command1(_stateList, _stateContainer, _figureManager, _saver, _loader);
+            _stateMachine = new StateMachine(_figureManager);
+            _command = new Command1(_figureManager, _stateMachine, _saver, _loader);
         }
 
         private void fileOpenButton_Click_1(object sender, RoutedEventArgs e)
@@ -66,7 +64,8 @@ namespace VectorEditorWPF
 
         private void canvas_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            _stateContainer.MouseDown((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
+            var state = _stateMachine.GetCurrentState();
+            state.MouseDown((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
 
             UpdatePropirties();
         }
@@ -81,12 +80,14 @@ namespace VectorEditorWPF
 
         private void canvas_PreviewMouseMove(object sender, MouseEventArgs e)
         {
-            _stateContainer.MouseMove((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
+            var state = _stateMachine.GetCurrentState();
+            state.MouseMove((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
         }
 
         private void canvas_PreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
-            _stateContainer.MouseUp((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
+            var state = _stateMachine.GetCurrentState();
+            state.MouseUp((int)e.GetPosition(image).X, (int)e.GetPosition(image).Y);
         }
 
         private void CreateRect_OnClick(object sender, RoutedEventArgs e)
@@ -112,8 +113,10 @@ namespace VectorEditorWPF
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            var state = _stateMachine.GetCurrentState();
+
             if (e.Key == Key.Delete)
-                _stateContainer.Delete();
+                state.Delete();
 
             if (e.Key == Key.LeftShift)
             {
@@ -121,7 +124,7 @@ namespace VectorEditorWPF
             }
 
             if (e.Key == Key.Escape)
-                _stateContainer.Escape();
+                state.Escape();
         }
 
         private void Window_KeyUp(object sender, KeyEventArgs e)

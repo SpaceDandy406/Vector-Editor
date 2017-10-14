@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VectorEditorCore;
-using VectorEditorCore.Interfaces;
+﻿using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    public class MovingFigure : State
+    public class MovingFigure : StateBase
     {
-        public MovingFigure(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
-            : base(stateList, stateContainer, figureManager)
+        public MovingFigure(StateMachine stateMachine, IFigureManager figureManager)
+            : base(stateMachine, figureManager)
         {
 
         }
 
         public override void MouseUp(int x, int y)
         {
-            stateContainer.SetState(stateList[(int)StateType.SelectFigure]);
-            figureManager.ReDraw();
+            _stateMachine.SetState(StateType.SelectFigure);            
+            _figureManager.ReDraw();
         }
 
         public override void MouseDown(int x, int y)
@@ -28,8 +22,8 @@ namespace VectorEditorController.States
 
         public override void MouseMove(int x, int y)
         {
-            figureManager.MoveCatched(x, y);
-            figureManager.ReDraw();
+            _figureManager.MoveCatched(x, y);
+            _figureManager.ReDraw();
         }
 
         public override void Delete()

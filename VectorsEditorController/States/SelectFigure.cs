@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VectorEditorCore;
-using VectorEditorCore.Interfaces;
+﻿using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    public class SelectFigure : State
+    public class SelectFigure : StateBase
     {
-        public SelectFigure(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
-            : base(stateList, stateContainer, figureManager)
+        public SelectFigure(StateMachine stateMachine, IFigureManager figureManager)
+            : base(stateMachine, figureManager)
         {
 
         }
@@ -23,14 +17,14 @@ namespace VectorEditorController.States
 
         public override void MouseDown(int x, int y)
         {
-            if (figureManager.CatchMarker(x, y))
-                stateContainer.SetState(stateList[(int)StateType.StretchFigure]);
-            else if (figureManager.CatchFigure(x, y))
-                stateContainer.SetState(stateList[(int)StateType.MovingFigure]);
+            if (_figureManager.CatchMarker(x, y))
+                _stateMachine.SetState(StateType.StretchFigure);
+            else if (_figureManager.CatchFigure(x, y))
+                _stateMachine.SetState(StateType.MovingFigure);
             else
-                stateContainer.SetState(stateList[(int)StateType.InitialState]);
+                _stateMachine.SetState(StateType.InitialState);
 
-            figureManager.ReDraw();
+            _figureManager.ReDraw();
         }
 
         public override void MouseMove(int x, int y)
@@ -40,15 +34,15 @@ namespace VectorEditorController.States
 
         public override void Delete()
         {
-            figureManager.DeleteSelectedFigure();
-            figureManager.ReDraw();
+            _figureManager.DeleteSelectedFigure();
+            _figureManager.ReDraw();
         }
 
         public override void Escape()
         {
-            stateContainer.SetState(stateList[(int)StateType.InitialState]);
-            figureManager.DropCatched();
-            figureManager.ReDraw();
+            _stateMachine.SetState(StateType.InitialState);
+            _figureManager.DropCatched();
+            _figureManager.ReDraw();
         }
     }
 }

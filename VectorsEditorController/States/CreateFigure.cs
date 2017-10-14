@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VectorEditorCore;
-using VectorEditorCore.Interfaces;
+﻿using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    public class CreateFigure : State
+    public class CreateFigure : StateBase
     {
-        public CreateFigure(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
-            : base(stateList, stateContainer, figureManager)
+        public CreateFigure(StateMachine stateMachine, IFigureManager figureManager)
+            : base(stateMachine, figureManager)
         {
         }
 
@@ -21,11 +15,11 @@ namespace VectorEditorController.States
 
         public override void MouseDown(int x, int y)
         {
-            figureManager.CreateFigure(x, y);
+            _figureManager.CreateFigure(x, y);
 
-            figureManager.ReDraw();
+            _figureManager.ReDraw();
 
-            stateContainer.SetState(stateList[(int)StateType.StretchFigure]);
+            _stateMachine.SetState(StateType.StretchFigure);
         }
 
         public override void MouseMove(int x, int y)
@@ -40,7 +34,7 @@ namespace VectorEditorController.States
 
         public override void Escape()
         {
-            stateContainer.SetState(stateList[(int)StateType.InitialState]);
+            _stateMachine.SetState(StateType.InitialState);            
         }
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VectorEditorController.States
+﻿namespace VectorEditorController.States
 {
-    enum StateType
+    public enum StateType
     {
         CreateFigure = 0,
         InitialState = 1,

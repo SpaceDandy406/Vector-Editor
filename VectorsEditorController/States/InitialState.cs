@@ -1,38 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VectorEditorCore;
-using VectorEditorCore.Interfaces;
+﻿using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    public class InitialState : State
+    public class InitialState : StateBase
     {
         bool isCatch;
 
-        public InitialState(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
-            : base(stateList, stateContainer, figureManager)
+        public InitialState(StateMachine stateMachine, IFigureManager figureManager)
+            : base(stateMachine, figureManager)
         {
             isCatch = false;
         }
 
         public override void MouseUp(int x, int y)
         {
-            if (figureManager.CatchFigure(x, y) && isCatch)
+            if (_figureManager.CatchFigure(x, y) && isCatch)
             {
-                stateContainer.SetState(stateList[(int)StateType.SelectFigure]);
+                _stateMachine.SetState(StateType.SelectFigure);
             }
-            figureManager.ReDraw();
+            _figureManager.ReDraw();
         }
 
         public override void MouseDown(int x, int y)
         {
-            if (figureManager.CatchFigure(x, y))
+            if (_figureManager.CatchFigure(x, y))
             {
                 isCatch = true;
-                figureManager.ReDraw();
+                _figureManager.ReDraw();
             }
         }
 

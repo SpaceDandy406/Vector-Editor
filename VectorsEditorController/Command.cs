@@ -9,17 +9,15 @@ namespace VectorEditorController
 {
     public class Command1 : ICommand1
     {
-        private readonly StateContainer _insideStateContainer;
-        private readonly StateList _insideStateList;
         private readonly IFigureManager _figureManager;
+        private readonly StateMachine _stateMachine;
         private readonly ISavable _saver;
         private readonly ILoadable _loader;
 
-        public Command1(StateList stateList, StateContainer stateContainer, IFigureManager figureManager, ISavable saver, ILoadable loader)
+        public Command1(IFigureManager figureManager, StateMachine stateMachine, ISavable saver, ILoadable loader)
         {
-            _insideStateContainer = stateContainer;
-            _insideStateList = stateList;
             _figureManager = figureManager;
+            _stateMachine = stateMachine;
             _saver = saver;
             _loader = loader;
         }
@@ -27,7 +25,7 @@ namespace VectorEditorController
         public void Save(string filePath)
         {
             _saver.Save(filePath);
-            _insideStateContainer.SetState(_insideStateList[(int)StateType.InitialState]);
+            _stateMachine.SetState(StateType.InitialState);
         }
 
         public void Load(string filePath)
@@ -35,7 +33,7 @@ namespace VectorEditorController
             _figureManager.Clear();
 
             _loader.Load(filePath);
-            _insideStateContainer.SetState(_insideStateList[(int)StateType.InitialState]);
+            _stateMachine.SetState(StateType.InitialState);
             ReDraw();
         }
 
@@ -71,7 +69,7 @@ namespace VectorEditorController
 
         public void CreateFigure()
         {
-            _insideStateContainer.SetState(_insideStateList[(int) StateType.CreateFigure]);
+            _stateMachine.SetState(StateType.CreateFigure);
             ReDraw();
         }
 

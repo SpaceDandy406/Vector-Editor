@@ -1,26 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using VectorEditorController.Interfaces;
-using VectorEditorCore;
 using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    abstract public class State : IEvent
+    abstract public class StateBase : IEvent
     {
-        protected StateList stateList;
-        protected StateContainer stateContainer;
-        protected IFigureManager figureManager;
+        protected readonly StateMachine _stateMachine;
+        protected IFigureManager _figureManager;
 
 
-        public State(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
+        public StateBase(StateMachine stateMachine, IFigureManager figureManager)
         {
-            this.stateList = stateList;
-            this.stateContainer = stateContainer;
-            this.figureManager = figureManager;
+            _stateMachine = stateMachine;
+            _figureManager = figureManager;
         }
 
         abstract public void MouseUp(int x, int y);
