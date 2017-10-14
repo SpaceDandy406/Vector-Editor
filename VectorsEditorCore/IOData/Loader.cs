@@ -2,30 +2,27 @@
 using System.IO;
 using System.Text;
 using VectorEditorCore.FigureSet;
+using VectorsEditorCore.Interfaces;
 
 namespace VectorEditorCore.IOData
 {
-	public class Loader
+	public class Loader : ILoadable
 	{
-        Store store;
-        DataInConverter dataInConverter;
-        MemoryStream insideStream;
-        FileStream outStream;
-        FigureFactory figureFactory;
+        private readonly FigureFactory _figureFactory = new FigureFactory();
+        private readonly Store _store;
 
-		public Loader (Store _store, FigureFactory _figureFactory)
-		{
-            this.store = _store;
-		    figureFactory = _figureFactory;
-		}
+        public Loader(Store store)
+        {
+            _store = store;
+        }
 
         public void Load(string fileName)
         {
-            using (insideStream = new MemoryStream())
+            using (var insideStream = new MemoryStream())
             {
-                using (outStream = new FileStream(fileName, FileMode.Open))
+                using (var outStream = new FileStream(fileName, FileMode.Open))
                 {
-                    dataInConverter = new TxtLoadAlgorythm();
+                    var dataInConverter = new TxtLoadAlgorythm();
 
                     dataInConverter.Convert(insideStream, outStream);
                 }
@@ -36,28 +33,28 @@ namespace VectorEditorCore.IOData
 
                 while ((insideStream.Length) != (insideStream.Position))
                 {
-                    str = ReadTagFromStream();
+                    str = ReadTagFromStream(insideStream);
 
                     if (str.StartsWith("<Rect>"))
                     {
-                        figureFactory.SetFigureType(FigureType.RECT);
-                        Figure figure = figureFactory.CreateFigure();
+                        _figureFactory.SetFigureType(FigureType.RECT);
+                        Figure figure = _figureFactory.CreateFigure();
                         figure.LoadFromStream(insideStream);                        
-                        store.Add(figure);
+                        _store.Add(figure);
                     }
                     else if (str.StartsWith("<Line>"))
                     {
-                        figureFactory.SetFigureType(FigureType.LINE);
-                        Figure figure = figureFactory.CreateFigure();
+                        _figureFactory.SetFigureType(FigureType.LINE);
+                        Figure figure = _figureFactory.CreateFigure();
                         figure.LoadFromStream(insideStream);
-                        store.Add(figure);
+                        _store.Add(figure);
                     }
                     else if (str.StartsWith("<Ellipse>"))
                     {
-                        figureFactory.SetFigureType(FigureType.ELLIPSE);
-                        Figure figure = figureFactory.CreateFigure();
+                        _figureFactory.SetFigureType(FigureType.ELLIPSE);
+                        Figure figure = _figureFactory.CreateFigure();
                         figure.LoadFromStream(insideStream);
-                        store.Add(figure);
+                        _store.Add(figure);
                     }
                     insideStream.ReadByte();
                     insideStream.ReadByte();
@@ -65,17 +62,17 @@ namespace VectorEditorCore.IOData
             }
         }
 
-        private string ReadTagFromStream()
+        private string ReadTagFromStream(Stream stream)
         {
             byte buff;
             StringBuilder strBuilder = new StringBuilder();
 
-            buff = (byte) insideStream.ReadByte();
+            buff = (byte)stream.ReadByte();
 
             while ((char)buff != '>')
             {
                 strBuilder.Append(Convert.ToChar(buff));
-                buff = (byte)insideStream.ReadByte();
+                buff = (byte)stream.ReadByte();
             }
 
             strBuilder.Append(Convert.ToChar(buff));

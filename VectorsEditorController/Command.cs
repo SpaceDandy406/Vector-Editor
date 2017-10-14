@@ -1,83 +1,83 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using System.Windows.Media;
 using VectorEditorController.Interfaces;
 using VectorEditorController.States;
 using VectorEditorCore;
 using VectorEditorCore.Interfaces;
+using VectorsEditorCore.Interfaces;
 
 namespace VectorEditorController
 {
-    public class Command : ICommand
+    public class Command1 : ICommand1
     {
-        StateContainer insideStateContainer;
-        StateList insideStateList;
-        IFigureManager figureManager;
+        private readonly StateContainer _insideStateContainer;
+        private readonly StateList _insideStateList;
+        private readonly IFigureManager _figureManager;
+        private readonly ISavable _saver;
+        private readonly ILoadable _loader;
 
-        public Command(StateList stateList, StateContainer stateContainer, IFigureManager figureManager)
+        public Command1(StateList stateList, StateContainer stateContainer, IFigureManager figureManager, ISavable saver, ILoadable loader)
         {
-            this.insideStateContainer = stateContainer;
-            this.insideStateList = stateList;
-            this.figureManager = figureManager;
+            _insideStateContainer = stateContainer;
+            _insideStateList = stateList;
+            _figureManager = figureManager;
+            _saver = saver;
+            _loader = loader;
         }
 
         public void Save(string filePath)
         {
-            figureManager.Save(filePath);
-            insideStateContainer.SetState(insideStateList[(int)StateType.InitialState]);
+            _saver.Save(filePath);
+            _insideStateContainer.SetState(_insideStateList[(int)StateType.InitialState]);
         }
 
         public void Load(string filePath)
         {
-            figureManager.Clear();
+            _figureManager.Clear();
 
-            figureManager.Load(filePath);
-            insideStateContainer.SetState(insideStateList[(int)StateType.InitialState]);
+            _loader.Load(filePath);
+            _insideStateContainer.SetState(_insideStateList[(int)StateType.InitialState]);
             ReDraw();
         }
 
         public void SetFigure(FigureType figureType)
         {
-            figureManager.SetFigureType(figureType);
+            _figureManager.SetFigureType(figureType);
         }
 
         public void SetFigureFillColor(Color color)
         {
-            figureManager.SetFigureFillColor(color);
-            figureManager.SetFigureFactoryFillColor(color);
+            _figureManager.SetFigureFillColor(color);
+            _figureManager.SetFigureFactoryFillColor(color);
             ReDraw();
         }
 
         public void SetFigureLineColor(Color color)
         {
-            figureManager.SetFigureLineColor(color);
-            figureManager.SetFigureFactoryLineColor(color);
+            _figureManager.SetFigureLineColor(color);
+            _figureManager.SetFigureFactoryLineColor(color);
             ReDraw();
         }
 
         public void SetFigureLineSize(int lineSize)
         {
-            figureManager.SetFigureLineSize(lineSize);
+            _figureManager.SetFigureLineSize(lineSize);
             ReDraw();
         }
 
         public void ReDraw()
         {
-            figureManager.ReDraw();
+            _figureManager.ReDraw();
         }
 
         public void CreateFigure()
         {
-            insideStateContainer.SetState(insideStateList[(int) StateType.CreateFigure]);
+            _insideStateContainer.SetState(_insideStateList[(int) StateType.CreateFigure]);
             ReDraw();
         }
 
         public void SetMultiSelect(bool shiftIsDown)
         {
-            figureManager.SetMultiSelect(shiftIsDown);
+            _figureManager.SetMultiSelect(shiftIsDown);
             ReDraw();
         }
     }

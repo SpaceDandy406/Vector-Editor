@@ -61,6 +61,8 @@
     <Compile Include="FigureSet\Rect.cs" />
     <Compile Include="Interfaces\IFigureManager.cs" />
     <Compile Include="Interfaces\IForm.cs" />
+    <Compile Include="Interfaces\ILoadable.cs" />
+    <Compile Include="Interfaces\ISavable.cs" />
     <Compile Include="IOData\DataInConverter.cs" />
     <Compile Include="IOData\DataOutConverter.cs" />
     <Compile Include="IOData\Loader.cs" />

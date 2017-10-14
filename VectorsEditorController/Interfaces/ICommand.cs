@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VectorEditorCore;
+using VectorsEditorCore.Interfaces;
 
 namespace VectorEditorController.Interfaces
 {
-    interface ICommand
+    public interface ICommand1
     {
         void Save(string filePath);
 

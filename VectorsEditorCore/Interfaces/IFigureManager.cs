@@ -9,10 +9,6 @@ namespace VectorEditorCore.Interfaces
 {
     public interface IFigureManager
     {
-        void Save(string filePath);
-
-        void Load(string filePath);
-
         void SetFigureType(FigureType figureType);
 
         void SetFigureFillColor(Color color);

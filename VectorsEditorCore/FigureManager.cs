@@ -40,24 +40,12 @@ namespace VectorEditorCore
             this.scene = new Scene(this.plotter, this.store, this.selectList);
             this.figureFactory = new FigureFactory();
             this.saver = new Saver(this.store);
-            this.loader = new Loader(this.store, figureFactory);
+            this.loader = new Loader(this.store);
             this.moveType = new MoveType();
             this.form = form;
             multiSelect = false;
             catchedY = catchedX = 0;
             numberOfMoveMarker = 0;
-        }
-
-        public void Save(string _fileName)
-        {
-            this.saver.Save(_fileName);
-        }
-
-        public void Load(string _fileName)
-        {
-            this.loader.Load(_fileName);
-
-            SetChangedPropirties();
         }
 
         public void ReDraw()
