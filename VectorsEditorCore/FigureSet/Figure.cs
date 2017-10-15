@@ -3,7 +3,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
-using System.Windows.Controls;
 using System.Windows.Media;
 using VectorEditorCore.Drawing;
 using VectorEditorCore.FigureProperties;
@@ -11,10 +10,11 @@ using VectorEditorCore.Selections;
 
 namespace VectorEditorCore.FigureSet
 {
-	public class Figure
+	public class Figure : IDrawable
 	{
-		public int x1, x2, y1, y2;
-		protected PropSet propSet;
+        protected PropSet propSet;
+
+        public int x1, x2, y1, y2;
         public int catchedX, catchedY;
 	    public List<Marker> listMarker;
 
@@ -66,11 +66,11 @@ namespace VectorEditorCore.FigureSet
             propSet.SetFigureLineSize(lineSize);
         }
 
-		virtual public void WriteToStream(Stream stream)
+		public virtual void WriteToStream(Stream stream)
 		{
 		}
 
-		virtual public void LoadFromStream(Stream stream)
+		public virtual void LoadFromStream(Stream stream)
 		{
             byte buffByte = (byte)stream.ReadByte();
             StringBuilder strBuilder = new StringBuilder();
@@ -108,12 +108,12 @@ namespace VectorEditorCore.FigureSet
             listMarker[3].y = y2 - 5;
 		}
 
-        virtual public void DrawSelf(Plotter _plotter)
+        public virtual void Draw(Plotter _plotter)
         {
 
         }
 
-        virtual public void MoveMarker(int x, int y, int numberOfMarker)
+        public virtual void MoveMarker(int x, int y, int numberOfMarker)
         {
             listMarker[numberOfMarker].Move(x, y);
 
@@ -143,7 +143,7 @@ namespace VectorEditorCore.FigureSet
             y2 = Math.Max(listMarker[1].y, listMarker[2].y) + 5;
         }
 
-        virtual public void MoveFigure(int x, int y)
+        public virtual void MoveFigure(int x, int y)
         {
             x1 = x1 + x;
             x2 = x2 + x;

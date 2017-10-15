@@ -1,36 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VectorEditorCore.Selections;
+﻿using VectorEditorCore.Selections;
 
 namespace VectorEditorCore.Drawing
 {
     public class Scene
     {
-        public Plotter Plotter { get; set; }
-        public Store Store { get; set; }
-        public SelectionsList selectList { get; set; }
+        private Plotter _plotter;
+        private Store _store;
+        private SelectionsList _selectList;
 
-        public Scene(Plotter _plotter, Store _store, SelectionsList _selectList)
+        public Scene(Plotter plotter, Store store, SelectionsList selectList)
         {
-            this.Plotter = _plotter;
-            this.Store = _store;
-            this.selectList = _selectList;
+            _plotter = plotter;
+            _store = store;
+            _selectList = selectList;
         }
 
         public void Plot()
         {
-            Plotter.BeginDraw();
+            _plotter.BeginDraw();
 
-            foreach (var figure in this.Store)
-                figure.DrawSelf(this.Plotter);
+            foreach (var figure in _store)
+                figure.Draw(_plotter);
 
-            foreach (var item in selectList)
-                item.DrawSelf(Plotter);
+            foreach (var item in _selectList)
+                item.DrawSelf(_plotter);
 
-            Plotter.EndDraw();
+            _plotter.EndDraw();
         }
     }
 }

@@ -1,80 +1,67 @@
 ﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using VectorEditorCore.Drawing;
-using VectorEditorCore.FigureSet;
 using VectorEditorCore.Interfaces;
-using VectorEditorCore.IOData;
 using VectorEditorCore.Selections;
 
 namespace VectorEditorCore
 {
-    enum MoveType
-    {
-        MOVEFIGURE,
-        MOVEMARKER,
-        MOVENEWFIGURE
-    }
-
     public class FigureManager : IFigureManager
     {
-        Plotter plotter { get; set; }
-        Scene scene { get; set; }
-        Store _store { get; set; }
-        SelectionsList selectList { get; set; }
-        FigureFactory figureFactory { get; set; }
-        Saver saver { get; set; }
-        Loader loader { get; set; }
-        MoveType moveType;
-        IForm form;
+        private readonly Plotter _plotter;
+        private readonly Scene _scene;
+        private readonly Store _store;
+        private readonly SelectionsList _selectList;
+        private readonly FigureFactory _figureFactory;
+        private readonly IForm _form;
 
-        bool multiSelect;
-        int catchedX, catchedY;
-        int numberOfMoveMarker;
+        private MoveType _moveType;
+        private bool _multiSelect;
+        private Point _catchedPoint;
+        private int _numberOfMoveMarker;
 
         public FigureManager(IForm form, Image image, Store store)
         {
-            this.plotter = new Plotter(image);
             _store = store;
-            this.selectList = new SelectionsList();
-            this.scene = new Scene(this.plotter, this._store, this.selectList);
-            this.figureFactory = new FigureFactory();
-            this.saver = new Saver(this._store);
-            this.loader = new Loader(this._store);
-            this.moveType = new MoveType();
-            this.form = form;
-            multiSelect = false;
-            catchedY = catchedX = 0;
-            numberOfMoveMarker = 0;
+            _form = form;
+            _plotter = new Plotter(image);
+            _selectList = new SelectionsList();
+            _scene = new Scene(_plotter, _store, _selectList);
+            _figureFactory = new FigureFactory();
+            _moveType = new MoveType();
+            _multiSelect = false;
+            _catchedPoint = new Point();
+            _numberOfMoveMarker = 0;
         }
 
         public void ReDraw()
         {
-            scene.Plot();
+            _scene.Plot();
         }
 
         public void SetFigureType(FigureType type)
         {
-            this.figureFactory.SetFigureType(type);
+            _figureFactory.SetFigureType(type);
         }
 
         public void CreateFigure(int x, int y)
         {
-            moveType = MoveType.MOVENEWFIGURE;
+            _moveType = MoveType.MOVENEWFIGURE;
 
-            catchedX = x;
-            catchedY = y;
-            numberOfMoveMarker = 2;
+            _catchedPoint = new Point(x, y);
+            _numberOfMoveMarker = 2;
 
-            selectList.Clear();
-            
-            Figure temp = this.figureFactory.CreateFigure();
-            this._store.Add(temp);
-            this.selectList.Add(new Selection(temp));
+            _selectList.Clear();
 
-            Color nullColor = new Color() { A = 0, R = 255, G = 255, B = 255 };
+            var temp = _figureFactory.CreateFigure();
+            _store.Add(temp);
+            _selectList.Add(new Selection(temp));
 
-            foreach (var item in selectList)
+            var nullColor = new Color() { A = 0, R = 255, G = 255, B = 255 };
+
+            foreach (var item in _selectList)
             {
                 item.SetFigureFrame(x, x, y, y);
                 item.SetFigureFillColor(nullColor);
@@ -85,7 +72,7 @@ namespace VectorEditorCore
 
         public void SetFigureFillColor(Color color)
         {
-            foreach (var item in this.selectList)
+            foreach (var item in _selectList)
             {
                 item.SetFigureFillColor(color);
             }
@@ -93,14 +80,14 @@ namespace VectorEditorCore
 
         public void SetFigureFactoryFillColor(Color color)
         {
-            figureFactory.SetFillColor(color);
+            _figureFactory.SetFillColor(color);
         }
 
         public void SetFigureLineSize(int lineSize)
         {
-            figureFactory.SetLineSize(lineSize);
+            _figureFactory.SetLineSize(lineSize);
 
-            foreach (var item in this.selectList)
+            foreach (var item in _selectList)
             {
                 item.SetFigureLineSize(lineSize);
             }
@@ -108,38 +95,37 @@ namespace VectorEditorCore
 
         public void DeleteSelectedFigure()
         {
-            foreach (var selection in selectList)
+            foreach (var selection in _selectList)
             {
                 _store.Remove(selection.insideFigure);
             }
 
-            selectList.Clear();
+            _selectList.Clear();
         }
 
         public bool CatchFigure(int x, int y)
         {
-            moveType = MoveType.MOVEFIGURE;
+            _moveType = MoveType.MOVEFIGURE;
 
-            catchedX = x;
-            catchedY = y;
+            _catchedPoint = new Point(x, y);
 
             foreach (var item in _store)
             {
-                if (multiSelect && item.IsHitToFigure(x, y))
+                if (_multiSelect && item.IsHitToFigure(x, y))
                 {
                     var item1 = item;
 
-                    if (!selectList.Exists(selection => selection.insideFigure == item1))
-                        selectList.Add(new Selection(item));
+                    if (!_selectList.Exists(selection => selection.insideFigure == item1))
+                        _selectList.Add(new Selection(item));
 
                     SetChangedPropirties();
 
                     return true;
-                } 
+                }
                 else if (item.IsHitToFigure(x, y))
                 {
-                    selectList.Clear();
-                    selectList.Add(new Selection(item));
+                    _selectList.Clear();
+                    _selectList.Add(new Selection(item));
 
                     SetChangedPropirties();
 
@@ -147,7 +133,7 @@ namespace VectorEditorCore
                 }
             }
 
-            selectList.Clear();
+            _selectList.Clear();
 
             SetChangedPropirties();
 
@@ -156,14 +142,13 @@ namespace VectorEditorCore
 
         public bool CatchMarker(int x, int y)
         {
-            moveType = MoveType.MOVEMARKER;
+            _moveType = MoveType.MOVEMARKER;
 
-            catchedX = x;
-            catchedY = y;
+            _catchedPoint = new Point(x, y);
 
-            foreach (var item in selectList.Where(item => item.IsHitToMarker(x, y)))
+            foreach (var item in _selectList.Where(item => item.IsHitToMarker(x, y)))
             {
-                numberOfMoveMarker = item.ReturnNumberOfCatchedMarker();
+                _numberOfMoveMarker = item.ReturnNumberOfCatchedMarker();
                 return true;
             }
 
@@ -172,75 +157,71 @@ namespace VectorEditorCore
 
         public void MoveCatched(int x, int y)
         {
-            var tempX = x - catchedX;
-            var tempY = y - catchedY;
+            var tempPoint = new Point(x - _catchedPoint.X, y - _catchedPoint.Y);
 
-            switch (moveType)
+            switch (_moveType)
             {
                 case MoveType.MOVEFIGURE:
-                    foreach (var item in selectList)
-                        item.MoveFigure(tempX, tempY);
+                    foreach (var item in _selectList)
+                        item.MoveFigure((int)tempPoint.X, (int)tempPoint.Y);
 
-                    catchedX = x;
-                    catchedY = y;
+                    _catchedPoint = new Point(x, y);
                     break;
                 case MoveType.MOVEMARKER:
-                    foreach (var item in this.selectList)
-                        item.MoveCurrentMarker(tempX, tempY, numberOfMoveMarker);
+                    foreach (var item in this._selectList)
+                        item.MoveCurrentMarker((int)tempPoint.X, (int)tempPoint.Y, _numberOfMoveMarker);
 
-                    catchedX = x;
-                    catchedY = y;
+                    _catchedPoint = new Point(x, y);
                     break;
                 case MoveType.MOVENEWFIGURE:
-                    foreach (var item in this.selectList)
-                        item.MoveCurrentMarker(tempX, tempY, 2);
+                    foreach (var item in this._selectList)
+                        item.MoveCurrentMarker((int)tempPoint.X, (int)tempPoint.Y, 2);
 
-                    catchedX = x;
-                    catchedY = y;
+                    _catchedPoint = new Point(x, y);
                     break;
             }
         }
 
         public void DropCatched()
         {
-            this.selectList.Clear();
+            _selectList.Clear();
         }
 
         public void SetMultiSelect(bool shiftIsDown)
         {
-            multiSelect = shiftIsDown;
+            _multiSelect = shiftIsDown;
         }
 
         public void Clear()
         {
-            selectList.Clear();
+            _selectList.Clear();
             _store.Clear();
         }
 
         public void SetChangedPropirties()
         {
-            if (selectList.Capacity != 0)
+            if (_selectList.Capacity != 0)
             {
-                form.FillColor = selectList.GetFillColorOpportunity();
-                form.LineColor = selectList.GetLineColorOpportunity();
-                form.LineSize = selectList.GetLineSizeOpportunity();
+                _form.FillColor = _selectList.GetFillColorOpportunity();
+                _form.LineColor = _selectList.GetLineColorOpportunity();
+                _form.LineSize = _selectList.GetLineSizeOpportunity();
             }
             else
             {
-                form.FillColor = true;
-                form.LineColor = true;
-                form.LineSize = true;
+                _form.FillColor = true;
+                _form.LineColor = true;
+                _form.LineSize = true;
             }
         }
 
         public void SetFigureFactoryLineColor(Color color)
         {
-            figureFactory.SetLineColor(color);
+            _figureFactory.SetLineColor(color);
         }
 
         public void SetFigureLineColor(Color color)
         {
-            foreach (var item in this.selectList)
+            foreach (var item in _selectList)
             {
                 item.SetFigureLineColor(color);
             }

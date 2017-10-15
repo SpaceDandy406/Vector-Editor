@@ -28,21 +28,22 @@ namespace VectorEditorWPF
         public MainWindow()
         {
             InitializeComponent();
-
-            IForm form = this;
+            
             _store = new Store();
             _saver = new Saver(_store);
             _loader = new Loader(_store);
-            _figureManager = new FigureManager(form, image, _store);
+            _figureManager = new FigureManager(this, image, _store);
             _stateMachine = new StateMachine(_figureManager);
             _command = new Command1(_figureManager, _stateMachine, _saver, _loader);
         }
 
         private void fileOpenButton_Click_1(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
-            openFileDialog.DefaultExt = ".txt";
-            openFileDialog.Filter = "Text documents (.txt)|*.txt";
+            var openFileDialog = new Microsoft.Win32.OpenFileDialog
+            {
+                DefaultExt = ".txt",
+                Filter = "Text documents (.txt)|*.txt"
+            };
 
             var result = openFileDialog.ShowDialog();
 
@@ -54,9 +55,11 @@ namespace VectorEditorWPF
 
         private void fileSaveButton_Click_1(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.SaveFileDialog saveFileDialog = new Microsoft.Win32.SaveFileDialog();
-            saveFileDialog.DefaultExt = ".txt";
-            saveFileDialog.Filter = "Text documents (.txt)|*.txt";
+            var saveFileDialog = new Microsoft.Win32.SaveFileDialog
+            {
+                DefaultExt = ".txt",
+                Filter = "Text documents (.txt)|*.txt"
+            };
 
             var result = saveFileDialog.ShowDialog();
 

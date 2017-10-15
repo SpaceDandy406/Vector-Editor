@@ -29,7 +29,7 @@ namespace VectorEditorCore.FigureSet
             stream.WriteByte((byte)'\n');
         }
 
-        public override void DrawSelf(Drawing.Plotter _plotter)
+        public override void Draw(Drawing.Plotter _plotter)
         {
             propSet.DrawBaseProps(_plotter);
             _plotter.DrawEllipse(this.x1, this.x2, this.y1, this.y2);

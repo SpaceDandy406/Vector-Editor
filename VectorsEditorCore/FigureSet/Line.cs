@@ -29,7 +29,7 @@ namespace VectorEditorCore.FigureSet
             stream.WriteByte((byte)'\n');
 		}
 
-	    public override void DrawSelf(Drawing.Plotter _plotter)
+	    public override void Draw(Drawing.Plotter _plotter)
         {
             propSet.DrawBaseProps(_plotter);
             _plotter.DrawLine(x1, x2, y1, y2);
