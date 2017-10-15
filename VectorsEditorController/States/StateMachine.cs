@@ -3,7 +3,7 @@ using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
-    public class StateMachine
+    public class StateMachine : IStateMachine
     {
         private readonly List<StateBase> _stateList = new List<StateBase>();
         private StateBase _currentState;

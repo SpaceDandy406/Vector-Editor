@@ -1,16 +1,15 @@
-﻿using System.Collections.Generic;
-using VectorEditorController.Interfaces;
+﻿using VectorEditorController.Interfaces;
 using VectorEditorCore.Interfaces;
 
 namespace VectorEditorController.States
 {
     abstract public class StateBase : IEvent
     {
-        protected readonly StateMachine _stateMachine;
+        protected readonly IStateMachine _stateMachine;
         protected IFigureManager _figureManager;
 
 
-        public StateBase(StateMachine stateMachine, IFigureManager figureManager)
+        public StateBase(IStateMachine stateMachine, IFigureManager figureManager)
         {
             _stateMachine = stateMachine;
             _figureManager = figureManager;

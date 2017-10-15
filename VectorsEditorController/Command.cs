@@ -10,11 +10,11 @@ namespace VectorEditorController
     public class Command1 : ICommand1
     {
         private readonly IFigureManager _figureManager;
-        private readonly StateMachine _stateMachine;
+        private readonly IStateMachine _stateMachine;
         private readonly ISavable _saver;
         private readonly ILoadable _loader;
 
-        public Command1(IFigureManager figureManager, StateMachine stateMachine, ISavable saver, ILoadable loader)
+        public Command1(IFigureManager figureManager, IStateMachine stateMachine, ISavable saver, ILoadable loader)
         {
             _figureManager = figureManager;
             _stateMachine = stateMachine;

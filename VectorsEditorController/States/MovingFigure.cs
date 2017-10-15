@@ -4,7 +4,7 @@ namespace VectorEditorController.States
 {
     public class MovingFigure : StateBase
     {
-        public MovingFigure(StateMachine stateMachine, IFigureManager figureManager)
+        public MovingFigure(IStateMachine stateMachine, IFigureManager figureManager)
             : base(stateMachine, figureManager)
         {
 

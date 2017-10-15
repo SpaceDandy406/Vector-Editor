@@ -4,7 +4,7 @@ namespace VectorEditorController.States
 {
     public class StretchFigure : StateBase 
     {
-        public StretchFigure(StateMachine stateMachine, IFigureManager figureManager)
+        public StretchFigure(IStateMachine stateMachine, IFigureManager figureManager)
             : base(stateMachine, figureManager)
         {
             

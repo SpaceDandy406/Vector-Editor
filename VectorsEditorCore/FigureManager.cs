@@ -20,7 +20,7 @@ namespace VectorEditorCore
     {
         Plotter plotter { get; set; }
         Scene scene { get; set; }
-        Store store { get; set; }
+        Store _store { get; set; }
         SelectionsList selectList { get; set; }
         FigureFactory figureFactory { get; set; }
         Saver saver { get; set; }
@@ -32,15 +32,15 @@ namespace VectorEditorCore
         int catchedX, catchedY;
         int numberOfMoveMarker;
 
-        public FigureManager(IForm form, Image image)
+        public FigureManager(IForm form, Image image, Store store)
         {
             this.plotter = new Plotter(image);
-            this.store = new Store();
+            _store = store;
             this.selectList = new SelectionsList();
-            this.scene = new Scene(this.plotter, this.store, this.selectList);
+            this.scene = new Scene(this.plotter, this._store, this.selectList);
             this.figureFactory = new FigureFactory();
-            this.saver = new Saver(this.store);
-            this.loader = new Loader(this.store);
+            this.saver = new Saver(this._store);
+            this.loader = new Loader(this._store);
             this.moveType = new MoveType();
             this.form = form;
             multiSelect = false;
@@ -69,7 +69,7 @@ namespace VectorEditorCore
             selectList.Clear();
             
             Figure temp = this.figureFactory.CreateFigure();
-            this.store.Add(temp);
+            this._store.Add(temp);
             this.selectList.Add(new Selection(temp));
 
             Color nullColor = new Color() { A = 0, R = 255, G = 255, B = 255 };
@@ -110,7 +110,7 @@ namespace VectorEditorCore
         {
             foreach (var selection in selectList)
             {
-                store.Remove(selection.insideFigure);
+                _store.Remove(selection.insideFigure);
             }
 
             selectList.Clear();
@@ -123,7 +123,7 @@ namespace VectorEditorCore
             catchedX = x;
             catchedY = y;
 
-            foreach (var item in store)
+            foreach (var item in _store)
             {
                 if (multiSelect && item.IsHitToFigure(x, y))
                 {
@@ -214,7 +214,7 @@ namespace VectorEditorCore
         public void Clear()
         {
             selectList.Clear();
-            store.Clear();
+            _store.Clear();
         }
 
         public void SetChangedPropirties()

@@ -4,7 +4,7 @@ namespace VectorEditorController.States
 {
     public class CreateFigure : StateBase
     {
-        public CreateFigure(StateMachine stateMachine, IFigureManager figureManager)
+        public CreateFigure(IStateMachine stateMachine, IFigureManager figureManager)
             : base(stateMachine, figureManager)
         {
         }

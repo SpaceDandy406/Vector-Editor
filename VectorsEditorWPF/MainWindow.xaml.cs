@@ -19,7 +19,7 @@ namespace VectorEditorWPF
         private ILoadable _loader;
         private ICommand1 _command;
         private IFigureManager _figureManager;
-        private StateMachine _stateMachine;
+        private IStateMachine _stateMachine;
 
         public bool FillColor { get; set; }
         public bool LineColor { get; set; }
@@ -33,7 +33,7 @@ namespace VectorEditorWPF
             _store = new Store();
             _saver = new Saver(_store);
             _loader = new Loader(_store);
-            _figureManager = new FigureManager(form, image);
+            _figureManager = new FigureManager(form, image, _store);
             _stateMachine = new StateMachine(_figureManager);
             _command = new Command1(_figureManager, _stateMachine, _saver, _loader);
         }
@@ -48,6 +48,8 @@ namespace VectorEditorWPF
 
             if (result == true)
                 _loader.Load(openFileDialog.FileName);
+            //TODO: костыль, убрать
+            _figureManager.ReDraw();
         }
 
         private void fileSaveButton_Click_1(object sender, RoutedEventArgs e)

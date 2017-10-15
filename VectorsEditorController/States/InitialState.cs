@@ -6,7 +6,7 @@ namespace VectorEditorController.States
     {
         bool isCatch;
 
-        public InitialState(StateMachine stateMachine, IFigureManager figureManager)
+        public InitialState(IStateMachine stateMachine, IFigureManager figureManager)
             : base(stateMachine, figureManager)
         {
             isCatch = false;
